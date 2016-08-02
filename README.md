@@ -9,7 +9,7 @@ docker run -it --rm -p 1880:1880 -p 80:80 jing/docker-nodered-haproxy-websocket:
 curl http://<docker-host-ip>
 ```
 
-ELB Configuration (don't use HTTP protocal in the config):
+ELB Configuration (don't use HTTP protocol in the config, only use TCP):
  - 80 (TCP) forwarding to 80 (TCP)
  - 443 (SSL TCP) forwarding to 80 (TCP)
  - No need to add ProxyProtocal Policy in ELB
