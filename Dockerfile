@@ -18,4 +18,4 @@ EXPOSE 1880 80
 # Environment variable holding file path for flows configuration
 ENV FLOWS=flows.json
 
-ENTRYPOINT ["supervisord", "--nodaemon", "--configuration", "/etc/supervisord.conf"]
+CMD ["supervisord", "--nodaemon", "--configuration", "/etc/supervisord.conf"]
