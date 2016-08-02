@@ -1,0 +1,15 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "volumes": [],
+  "containerDefinitions": [{
+    "name": "nodered",
+    "image": "jing/docker-nodered-haproxy-websocket:latest",
+    "essential": true,
+    "memory": 300,
+    "mountPoints": [],
+    "portMappings": [{
+      "hostPort": 80,
+      "containerPort": 80
+    }]
+  }]
+}
